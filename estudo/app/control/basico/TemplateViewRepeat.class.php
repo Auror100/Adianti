@@ -18,6 +18,7 @@ class TemplateViewRepeat extends TPage
             $html->enableSection('details',$replace,true); // É o true que faz a mágica do dinamismo
             
             parent::add($html);
+            
         }
         catch(Exception $e)
         {

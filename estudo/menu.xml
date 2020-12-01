@@ -53,6 +53,14 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewMask</action>
             </menuitem>
+            <menuitem label='Template Repetição'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewRepeat</action>
+            </menuitem>
+            <menuitem label='Template SinglePage'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewSinglePage</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
