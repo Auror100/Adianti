@@ -61,6 +61,10 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewSinglePage</action>
             </menuitem>
+              <menuitem label='Template SingleWindow'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewSingleWindow</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
