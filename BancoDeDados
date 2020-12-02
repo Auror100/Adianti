@@ -1,0 +1,41 @@
+/**
+
+Carregar um arquivo no sqlite:
+
+ sqlite3 arquivo.db
+ 
+ ler database no sqlite:
+ 
+ .read arquivo.sql
+ 
+ Mostrar as tabelas:
+ 
+ .schema
+ 
+ Sair do sqlite:
+ 
+ .q
+ 
+ ##################
+Logar em uma database no postgres:
+
+\c database
+
+Importar sql no postgres:
+
+\i arquivo.sql
+
+Mostrar tabelas no postgres:
+
+\dt
+
+Fechar o postgres:
+
+ctrl D
+
+
+
+
+
+
+**/
