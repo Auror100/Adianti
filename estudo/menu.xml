@@ -89,6 +89,10 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewTable</action>
             </menuitem>
+             <menuitem label='Template PanelGroup'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewPanelGroup</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
