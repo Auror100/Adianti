@@ -113,6 +113,10 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewQuestion</action>
             </menuitem>
+              <menuitem label='Template DialogInput'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewDialogInput</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
