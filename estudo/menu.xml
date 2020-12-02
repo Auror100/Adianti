@@ -85,6 +85,10 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewSiteEmbarcado</action>
             </menuitem>
+             <menuitem label='Template Table'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewTable</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
