@@ -9,8 +9,8 @@ class Cliente extends TRecord
     const PRIMARYKEY= 'id';
     const IDPOLICY =  'max'; // {max, serial}
     
-    const CREATEDAT = 'created_at';
-    const UPDATEDAT = 'updated_at';
+    const CREATEDAT = 'created_at'; // Constante do proprio framework
+    const UPDATEDAT = 'updated_at'; // Constante do proprio framework
     
     private $cidade;
     private $categoria;
