@@ -69,6 +69,10 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewModal</action>
             </menuitem>
+              <menuitem label='Template Cortina Lateral'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewCortinaLateral</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
