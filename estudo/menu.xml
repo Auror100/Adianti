@@ -93,6 +93,10 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewPanelGroup</action>
             </menuitem>
+            <menuitem label='Template Scroll'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewScroll</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
