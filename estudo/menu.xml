@@ -97,6 +97,10 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewScroll</action>
             </menuitem>
+              <menuitem label='Template Notebook'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewNotebook</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
