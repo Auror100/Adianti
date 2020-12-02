@@ -73,6 +73,18 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewCortinaLateral</action>
             </menuitem>
+            <menuitem label='Template Pdf Embarcado'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewPdfEmbarcado</action>
+            </menuitem>
+            <menuitem label='Template Video Embarcado'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewVideoEmbarcado</action>
+            </menuitem>
+            <menuitem label='Template Site Embarcado'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewSiteEmbarcado</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
