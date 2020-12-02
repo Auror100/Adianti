@@ -65,6 +65,10 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewSingleWindow</action>
             </menuitem>
+            <menuitem label='Template Modal'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewModal</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
