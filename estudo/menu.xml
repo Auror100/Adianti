@@ -101,6 +101,10 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewNotebook</action>
             </menuitem>
+            <menuitem label='Template VBox'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewBox</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
