@@ -105,6 +105,14 @@
                 <icon>fa:cube fa-fw</icon>
                 <action>TemplateViewBox</action>
             </menuitem>
+               <menuitem label='Template Information'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewInformation</action>
+            </menuitem>
+             <menuitem label='Template Question'>
+                <icon>fa:cube fa-fw</icon>
+                <action>TemplateViewQuestion</action>
+            </menuitem>
         </menu>
     </menuitem>
 </menu>
