@@ -1,6 +1,5 @@
 <?php
 class FormularioInputTypes extends TPage
-{
     public function __construct()
     {
         parent::__construct();
