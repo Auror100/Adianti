@@ -7,6 +7,8 @@ class FormularioBootstrap extends TPage
          
          $this->form = new BootstrapFormBuilder; // Chama a funcionalidade do bootstrapbuilder que faz forms dinâmicos e responsivos
          $this->form->setFormTitle('Formulário Bootstrap'); // Adiciona título
+         $this->form->generateAria(); // Acessibilidade
+         
          
          $id = new TEntry('id');
          $descricao =  new TEntry('descricao');
