@@ -1,5 +1,5 @@
 <?php
-class DataGridGroupAcoes extends TPage
+class DataGridComCriterio extends TPage
 {
     public function __construct()
     {
@@ -22,38 +22,23 @@ class DataGridGroupAcoes extends TPage
         $this->datagrid->addColumn($col_cidade);
         $this->datagrid->addColumn($col_estado);
         
-        $action1 = new TDataGridAction([$this,'onView'],['id' => '{id}' , 'nome' =>'{nome}','teste' => '5']); // Criando ações para o  DataGrid
+        $action1 = new TDataGridAction([$this,'onView'],['id' => '{id}' , 'nome' =>'{nome}','teste' => '5']);
         $action2 = new TDataGridAction([$this,'onDelete'],['id' => '{id}', 'nome' =>'{nome}']);
-        $action3 = new TDataGridAction([$this,'onPrint'],['id' => '{id}', 'nome' =>'{nome}']);
+        
+        $action2->setDisplayCondition([$this,'displayCondition']);
+        
         
         $action1->setUseButton(true); // Transformando em um botão quadrado
         $action2->setUseButton(true);
         
         
-        //$this->datagrid->addAction($action1,'Visualiza','fa:search blue');
-        //$this->datagrid->addAction($action2,'Exclui','fa:trash red');
+        $this->datagrid->addAction($action1,'Visualiza','fa:search blue');
+        $this->datagrid->addAction($action2,'Exclui','fa:trash red');
         //após definir colunas, e ações... criar a estrutura
         
-        $action1->setLabel('Visualiza'); // Agora os titulos e os icones dos botões devem ser setados de forma separada
-        $action1->setImage('fa:search blue');
-        
-        $action2->setLabel('Exclui');
-        $action2->setImage('fa:trash red');
-        
-        $action3->setLabel('Imprime');
-        $action3->setImage('fa:print green');
-        
-        $action_group = new TDataGridActionGroup('Ações','fa:th'); // Criando o menu que conterá as ações 
-        $action_group->addHeader('Grupo 1');
-        $action_group->addAction($action1);
-        $action_group->addAction($action2);
-        $action_group->addSeparator(); // Cria uma separação de opções
-        $action_group->addHeader('Grupo 2');
-        $action_group->addAction($action3);
-        
-        $this->datagrid->addActionGroup($action_group); // Coloca o menu de ações no DataGrid
         
         $this->datagrid->createModel(); // Cria a datagrid que foi setada
+        
         /*
         $item = new stdClass;
         $item->id =1;
@@ -62,7 +47,6 @@ class DataGridGroupAcoes extends TPage
         $item->estado = 'Tenesse';
         
         $this->datagrid->addItem($item);
-        
         */
         $panel = new TPanelGroup('Datagrid');
         $panel->add($this->datagrid);
@@ -71,9 +55,15 @@ class DataGridGroupAcoes extends TPage
         
     }
     
-  
-    
-    
+      public function displayCondition($objeto)
+    {
+        if($objeto->id >1)
+        {
+            return true;
+        }
+        
+        return false;
+    }
     
     public function onView($param)
     {
@@ -89,13 +79,6 @@ class DataGridGroupAcoes extends TPage
        public function onColumnAction($param)
     {
         new TMessage('info','Coluna clicada' . $param['coluna']);
-    }
-    
-    
-    
-     public function onPrint($param)
-    {
-       // new TMessage('info','Coluna clicada' . $param['coluna']);
     }
     
     
