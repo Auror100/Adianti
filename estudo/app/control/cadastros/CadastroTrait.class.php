@@ -1,12 +1,17 @@
 <?php
 class CadastroBasico extends TPage
 {
-    
     private $form;
+    
+    use Adianti\Base\AdiantiStandardFormTrait; // Importando o trait
     
     public function __construct()
     {
         parent::__construct();
+        
+        
+        $this->setDatabase('curso'); // Dizendo o nome da database
+        $this->setActiveRecord('Cidade'); // Dizendo o nome da classe
         
         $this->form = new BootstrapFormBuilder;
         $this->form->setFormTitle('Cidade');
@@ -30,44 +35,7 @@ class CadastroBasico extends TPage
         parent::add($this->form);      
     }
     
-    
-    
-    public function onClear()
-    {
-        $this->form->clear(true); // Limpando os campos
-    }
-    
-    
-    
-    public function onSave($param)
-    {
-          try
-          {
-            TTransaction::open('sample');
-        
-            $this->form->validate(); // Chamando a validação nos campos
-        
-            $data = $this->form->getData();
-            
-            $cidade = new Cidade;
-            $cidade->fromArray((array) $data); // Pegando todos os dados de TDCombo cidade
-            $cidade->store();
-            
-            $this->form->setData($cidade);
-            
-            new TMessage('info','Registro salvo com sucesso');
-            
-            TTransaction::close();  
-          }
-          catch(Exception $e)
-          {
-               new TMessage('error',$e->getMessage());
-          }  
-   
-   }
-   
-   
-   
+       
    public function onEdit($param)
    {
        try
@@ -94,3 +62,4 @@ class CadastroBasico extends TPage
        }
    }
 }
+
