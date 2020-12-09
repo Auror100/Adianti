@@ -6,7 +6,7 @@ class CadastroComBuscaTrait extends TPage
     private $datagrid;
     private $pageNavigation;
     
-    use Adianti\Base\AdiantiStandardListTrait;
+    use Adianti\Base\AdiantiStandardListTrait; // Importando o Trait
 
     public function __construct()
     {
@@ -85,7 +85,7 @@ class CadastroComBuscaTrait extends TPage
     
     public function clear()
     {
-        $this->clearFilters();
+        $this->clearFilters(); // Limpar os filtros no carregamento
         $this->onReload();
     }   
 }
