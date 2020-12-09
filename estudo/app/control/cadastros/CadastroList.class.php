@@ -135,7 +135,7 @@ class CadastroList extends TPage
         
         
         
-        $this->form->setData(TSession::getValue(__CLASS__.'_filter_data')); / Salvando a pesquisa
+        $this->form->setData(TSession::getValue(__CLASS__.'_filter_data')); // Salvando a pesquisa
          
         
         
@@ -163,7 +163,7 @@ class CadastroList extends TPage
         
         
         $panel->addHeaderWidget($dropdown);
-        $panel->addHeaderActionLink('Novo',new TAction(['ClienteForm','onEdit'],['register_state' => 'false']),'fa:plus green');
+        $panel->addHeaderActionLink('Novo',new TAction(['ClienteForm','onClear'],['register_state' => 'false']),'fa:plus green');
         
         
         
